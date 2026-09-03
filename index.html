@@ -3,20 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Early Fall Semester Project</title>
+  <meta name="description" content="A beginner-friendly guide to entry-level careers in technology.">
+  <title>Entry-Level Tech Career Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <a class="logo" href="#top">Tech Career Guide</a>
+    <nav aria-label="Main navigation">
+      <a href="#paths">Career Paths</a>
+      <a href="#getting-started">Getting Started</a>
+    </nav>
+  </header>
 
-  <h1>Early Fall Semester Project</h1>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">Start your technology career</p>
+      <h1 id="hero-title">Explore entry-level tech career paths</h1>
+      <p class="hero-text">
+        Technology includes many different careers, and choosing a starting point
+        can feel overwhelming. This guide compares several beginner-friendly paths
+        and the skills commonly used in each one.
+      </p>
+      <a class="primary-button" href="#paths">Explore career paths</a>
+    </section>
 
-  <p>
-    This is the starting page for my semester project. I will continue building
-    and updating this project throughout the semester.
-  </p>
+    <section class="paths-section" id="paths" aria-labelledby="paths-title">
+      <div class="section-heading">
+        <p class="eyebrow">Find a direction</p>
+        <h2 id="paths-title">Choose what interests you</h2>
+        <p>Use the buttons to filter the career paths by type of work.</p>
+      </div>
 
-  <p>
-    This project is currently under development. More content will be added soon.
-  </p>
+      <div class="filter-buttons" aria-label="Filter career paths">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All Paths</button>
+        <button class="filter-button" type="button" data-filter="support" aria-pressed="false">IT Support</button>
+        <button class="filter-button" type="button" data-filter="coding" aria-pressed="false">Coding</button>
+        <button class="filter-button" type="button" data-filter="data" aria-pressed="false">Data</button>
+        <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
+      </div>
 
+      <p class="filter-status" id="filter-status" aria-live="polite">Showing all 4 career paths.</p>
+
+      <div class="career-grid">
+        <article class="career-card" data-category="support">
+          <span class="card-label">IT Support</span>
+          <h3>Help Desk Technician</h3>
+          <p>Help users solve hardware, software, account, and network problems.</p>
+          <h4>Good skills to learn</h4>
+          <ul>
+            <li>Computer troubleshooting</li>
+            <li>Windows and Microsoft 365</li>
+            <li>Customer service</li>
+          </ul>
+        </article>
+
+        <article class="career-card" data-category="coding">
+          <span class="card-label">Coding</span>
+          <h3>Junior Web Developer</h3>
+          <p>Build and maintain websites using front-end programming skills.</p>
+          <h4>Good skills to learn</h4>
+          <ul>
+            <li>HTML and CSS</li>
+            <li>JavaScript</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </article>
+
+        <article class="career-card" data-category="data">
+          <span class="card-label">Data</span>
+          <h3>Junior Data Analyst</h3>
+          <p>Organize and study information so teams can make better decisions.</p>
+          <h4>Good skills to learn</h4>
+          <ul>
+            <li>Excel or Google Sheets</li>
+            <li>SQL</li>
+            <li>Data visualization</li>
+          </ul>
+        </article>
+
+        <article class="career-card" data-category="security">
+          <span class="card-label">Security</span>
+          <h3>Cybersecurity Technician</h3>
+          <p>Monitor systems, recognize threats, and help protect company information.</p>
+          <h4>Good skills to learn</h4>
+          <ul>
+            <li>Networking basics</li>
+            <li>Security fundamentals</li>
+            <li>Access management</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="steps-section" id="getting-started" aria-labelledby="steps-title">
+      <div class="section-heading">
+        <p class="eyebrow">Your next move</p>
+        <h2 id="steps-title">How to get started</h2>
+      </div>
+
+      <div class="steps-grid">
+        <article>
+          <span>1</span>
+          <h3>Choose one path</h3>
+          <p>Start with the career that best matches the type of work you enjoy.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>Build the basics</h3>
+          <p>Learn a few core skills through classes, tutorials, and regular practice.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>Create proof</h3>
+          <p>Complete small projects that show employers what you can do.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Arnold Archaga for the Early Fall Semester Project.</p>
+  </footer>
 </body>
 </html>
