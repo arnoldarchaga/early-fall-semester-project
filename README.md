@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This project is a beginner-friendly guide to several entry-level technology careers. It introduces IT support, web development, data analysis, and cybersecurity, and it shows some of the basic skills used in each career. Visitors can use the filter buttons to display the path that interests them.
+This project is a beginner-friendly guide to several entry-level technology careers. It introduces IT support, software development, data analysis, and cybersecurity, and it shows some of the basic skills used in each career. Visitors can filter the career cards and use the interactive comparison tool to view two paths side by side.
 
 ## Why does it exist?
 
@@ -12,7 +12,7 @@ I created this project because choosing a starting point in technology can be co
 
 - HTML to organize the content and career cards
 - CSS to create the colors, layout, and responsive design
-- JavaScript to make the career-path filters interactive
+- JavaScript to make the career-path filters and comparison tool interactive
 - Visual Studio Code to edit and organize the project files
 - GitHub and GitHub Desktop for version control
 - GitHub Pages to publish the website online

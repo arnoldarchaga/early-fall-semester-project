@@ -113,6 +113,7 @@ nav a:focus-visible {
 }
 
 .paths-section,
+.compare-section,
 .steps-section {
   padding: 5rem max(5vw, 1.25rem);
 }
@@ -215,6 +216,107 @@ nav a:focus-visible {
   background: var(--white);
 }
 
+.compare-section {
+  background: var(--light-blue);
+}
+
+.compare-section .section-heading > p:last-child {
+  color: var(--text);
+}
+
+.compare-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: end;
+  gap: 1rem;
+  max-width: 850px;
+  margin-top: 2rem;
+}
+
+.select-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.select-group label {
+  color: var(--navy);
+  font-weight: 800;
+}
+
+.select-group select {
+  width: 100%;
+  padding: 0.8rem 2.5rem 0.8rem 0.9rem;
+  border: 2px solid var(--border);
+  border-radius: 0.65rem;
+  background: var(--white);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.select-group select:hover,
+.select-group select:focus-visible {
+  border-color: var(--blue);
+  outline: none;
+}
+
+.compare-divider {
+  padding-bottom: 0.75rem;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.compare-status {
+  margin: 1rem 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1000px;
+}
+
+.compare-card {
+  padding: 1.75rem;
+  border: 1px solid #c9d9f1;
+  border-radius: 1rem;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.compare-card h3 {
+  margin: 0.3rem 0;
+  color: var(--navy);
+  font-size: 1.6rem;
+}
+
+.compare-card h4 {
+  margin: 1.25rem 0 0.25rem;
+  color: var(--navy);
+}
+
+.compare-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.compare-label {
+  margin: 0;
+  color: var(--blue);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.compare-role {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .steps-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -264,6 +366,7 @@ footer {
   }
 
   nav {
+    flex-wrap: wrap;
     gap: 1rem;
     font-size: 0.9rem;
   }
@@ -274,8 +377,17 @@ footer {
   }
 
   .career-grid,
+  .compare-grid,
   .steps-grid {
     grid-template-columns: 1fr;
+  }
+
+  .compare-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-divider {
+    display: none;
   }
 
   .filter-button {

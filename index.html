@@ -13,6 +13,7 @@
     <a class="logo" href="#top">Tech Career Guide</a>
     <nav aria-label="Main navigation">
       <a href="#paths">Career Paths</a>
+      <a href="#compare">Compare Paths</a>
       <a href="#getting-started">Getting Started</a>
     </nav>
   </header>
@@ -39,7 +40,7 @@
       <div class="filter-buttons" aria-label="Filter career paths">
         <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All Paths</button>
         <button class="filter-button" type="button" data-filter="support" aria-pressed="false">IT Support</button>
-        <button class="filter-button" type="button" data-filter="coding" aria-pressed="false">Coding</button>
+        <button class="filter-button" type="button" data-filter="coding" aria-pressed="false">Software Development</button>
         <button class="filter-button" type="button" data-filter="data" aria-pressed="false">Data</button>
         <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Security</button>
       </div>
@@ -60,7 +61,7 @@
         </article>
 
         <article class="career-card" data-category="coding">
-          <span class="card-label">Coding</span>
+          <span class="card-label">Software Development</span>
           <h3>Junior Web Developer</h3>
           <p>Build and maintain websites using front-end programming skills.</p>
           <h4>Good skills to learn</h4>
@@ -93,6 +94,71 @@
             <li>Security fundamentals</li>
             <li>Access management</li>
           </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="compare-section" id="compare" aria-labelledby="compare-title">
+      <div class="section-heading">
+        <p class="eyebrow">Compare your options</p>
+        <h2 id="compare-title">See two career paths side by side</h2>
+        <p>
+          Choose any two paths to compare their work, common skills, and a useful
+          first step. The comparison updates automatically.
+        </p>
+      </div>
+
+      <div class="compare-controls">
+        <div class="select-group">
+          <label for="first-path">First career path</label>
+          <select id="first-path">
+            <option value="support">IT Support</option>
+            <option value="development">Software Development</option>
+            <option value="data">Data Analysis</option>
+            <option value="security">Cybersecurity</option>
+          </select>
+        </div>
+
+        <div class="compare-divider" aria-hidden="true">vs.</div>
+
+        <div class="select-group">
+          <label for="second-path">Second career path</label>
+          <select id="second-path">
+            <option value="support">IT Support</option>
+            <option value="development" selected>Software Development</option>
+            <option value="data">Data Analysis</option>
+            <option value="security">Cybersecurity</option>
+          </select>
+        </div>
+      </div>
+
+      <p class="compare-status" id="compare-status" aria-live="polite">
+        Comparing IT Support and Software Development.
+      </p>
+
+      <div class="compare-grid">
+        <article class="compare-card" id="first-result">
+          <p class="compare-label">First choice</p>
+          <h3 data-field="name">IT Support</h3>
+          <p class="compare-role" data-field="role">Common starting role: Help Desk Technician</p>
+          <h4>What the work involves</h4>
+          <p data-field="focus">Help users solve hardware, software, account, and network problems.</p>
+          <h4>Core skills</h4>
+          <ul data-field="skills"></ul>
+          <h4>A useful first step</h4>
+          <p data-field="first-step"></p>
+        </article>
+
+        <article class="compare-card" id="second-result">
+          <p class="compare-label">Second choice</p>
+          <h3 data-field="name">Software Development</h3>
+          <p class="compare-role" data-field="role">Common starting role: Junior Web Developer</p>
+          <h4>What the work involves</h4>
+          <p data-field="focus">Build and maintain websites and applications by writing and testing code.</p>
+          <h4>Core skills</h4>
+          <ul data-field="skills"></ul>
+          <h4>A useful first step</h4>
+          <p data-field="first-step"></p>
         </article>
       </div>
     </section>
