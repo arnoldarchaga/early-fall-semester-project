@@ -16,7 +16,6 @@ I created this project because choosing a starting point in technology can be co
 - Visual Studio Code to edit and organize the project files
 - GitHub and GitHub Desktop for version control
 - GitHub Pages to publish the website online
-- An AI assistant occasionally for starting points and troubleshooting while I reviewed and tested the final code
 
 ## How to visit it
 
