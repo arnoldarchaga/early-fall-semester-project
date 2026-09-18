@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This project is a beginner-friendly guide to several entry-level technology careers. It introduces IT support, software development, data analysis, and cybersecurity, and it shows some of the basic skills used in each career. Visitors can filter the career cards and use the interactive comparison tool to view two paths side by side.
+This project is a beginner-friendly guide to several entry-level technology careers. It introduces IT support, software development, data analysis, and cybersecurity, and it shows some of the basic skills used in each career. Visitors can filter the career cards and use the interactive comparison tool to view two paths side by side and see what works better for them.
 
 ## Why does it exist?
 
