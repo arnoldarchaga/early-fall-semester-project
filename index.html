@@ -5,27 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A beginner-friendly guide to entry-level careers in technology.">
   <title>Entry-Level Tech Career Guide</title>
-  <link rel="stylesheet" href="style.css?v=20260918">
-  <script src="script.js?v=20260918" defer></script>
+  <link rel="stylesheet" href="style.css?v=20260930">
+  <script src="script.js?v=20260930" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <a class="logo" href="#top">Tech Career Guide</a>
     <nav aria-label="Main navigation">
       <a href="#paths">Career Paths</a>
       <a href="#compare">Compare Paths</a>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">My Plan</a>
+      <a href="#resources">Resources</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main id="main-content" tabindex="-1"><div id="top"></div>
     <section class="hero" aria-labelledby="hero-title">
       <p class="eyebrow">Start your technology career</p>
-      <h1 id="hero-title">Explore entry-level tech career paths</h1>
+      <h1 id="hero-title">Find your first step<br>into tech.</h1>
       <p class="hero-text">
         Technology includes many different careers, and choosing a starting point
         can feel overwhelming. This guide compares several beginner-friendly paths
-        and the skills commonly used in each one.
+        and the skills commonly used in each one. Explore a path, compare your options, and build a practical starting plan.
       </p>
       <a class="primary-button" href="#paths">Explore career paths</a>
     </section>
@@ -47,55 +49,8 @@
 
       <p class="filter-status" id="filter-status" aria-live="polite">Showing all 4 career paths.</p>
 
-      <div class="career-grid">
-        <article class="career-card" data-category="support">
-          <span class="card-label">IT Support</span>
-          <h3>Help Desk Technician</h3>
-          <p>Help users solve hardware, software, account, and network problems.</p>
-          <h4>Good skills to learn</h4>
-          <ul>
-            <li>Computer troubleshooting</li>
-            <li>Windows and Microsoft 365</li>
-            <li>Customer service</li>
-          </ul>
-        </article>
-
-        <article class="career-card" data-category="coding">
-          <span class="card-label">Software Development</span>
-          <h3>Junior Web Developer</h3>
-          <p>Build and maintain websites using front-end programming skills.</p>
-          <h4>Good skills to learn</h4>
-          <ul>
-            <li>HTML and CSS</li>
-            <li>JavaScript</li>
-            <li>Git and GitHub</li>
-          </ul>
-        </article>
-
-        <article class="career-card" data-category="data">
-          <span class="card-label">Data</span>
-          <h3>Junior Data Analyst</h3>
-          <p>Organize and study information so teams can make better decisions.</p>
-          <h4>Good skills to learn</h4>
-          <ul>
-            <li>Excel or Google Sheets</li>
-            <li>SQL</li>
-            <li>Data visualization</li>
-          </ul>
-        </article>
-
-        <article class="career-card" data-category="security">
-          <span class="card-label">Security</span>
-          <h3>Cybersecurity Technician</h3>
-          <p>Monitor systems, recognize threats, and help protect company information.</p>
-          <h4>Good skills to learn</h4>
-          <ul>
-            <li>Networking basics</li>
-            <li>Security fundamentals</li>
-            <li>Access management</li>
-          </ul>
-        </article>
-      </div>
+      <div class="career-grid"></div>
+      <noscript><p>Enable JavaScript to explore the career profiles, compare paths, and use the checklist. This guide covers IT Support, Software Development, Data Analysis, and Cybersecurity.</p></noscript>
     </section>
 
     <section class="compare-section" id="compare" aria-labelledby="compare-title">
@@ -164,33 +119,17 @@
     </section>
 
     <section class="steps-section" id="getting-started" aria-labelledby="steps-title">
-      <div class="section-heading">
-        <p class="eyebrow">Your next move</p>
-        <h2 id="steps-title">How to get started</h2>
-      </div>
-
-      <div class="steps-grid">
-        <article>
-          <span>1</span>
-          <h3>Choose one path</h3>
-          <p>Start with the career that best matches the type of work you enjoy.</p>
-        </article>
-        <article>
-          <span>2</span>
-          <h3>Build the basics</h3>
-          <p>Learn a few core skills through classes, tutorials, and regular practice.</p>
-        </article>
-        <article>
-          <span>3</span>
-          <h3>Create proof</h3>
-          <p>Complete small projects that show employers what you can do.</p>
-        </article>
-      </div>
+      <div class="section-heading"><p class="eyebrow">Turn interest into practice</p><h2 id="steps-title">Build your starting plan</h2><p>Choose a path, try the steps, and check off what you have practiced. This is a learning checklist, not a job-readiness score.</p></div>
+      <div class="select-group plan-select"><label for="plan-path">Your career path</label><select id="plan-path"></select></div>
+      <h3 id="plan-title"></h3><div class="steps-grid" id="plan-steps"></div>
+      <div class="checklist-panel"><div><p class="eyebrow">A little progress counts</p><h3>My practice checklist</h3><p id="progress-count" aria-live="polite"></p><progress id="progress" max="4" value="0" aria-label="Completed practice tasks"></progress><p id="save-status" class="small-note"></p><button type="button" id="reset-progress" class="reset-button">Reset this path</button></div><fieldset id="checklist" aria-label="Practice tasks for your selected path"><legend class="sr-only">Practice tasks for your selected path</legend></fieldset></div>
     </section>
+    <section class="resources-section" id="resources" aria-labelledby="resources-title"><div class="section-heading"><p class="eyebrow">Keep learning</p><h2 id="resources-title">Start with reliable resources</h2><p>Go directly to the organizations behind the training and credentials. Explore the material before deciding whether a paid exam fits your goals.</p></div><div class="resource-grid" id="resource-grid"></div><p class="small-note">Job titles and requirements vary by employer. Use this guide to explore a direction, then compare actual job descriptions. Resource links reviewed September 2026.</p></section>
+
   </main>
 
   <footer>
-    <p>Created by Arnold Archaga for the Early Fall Semester Project.</p>
+    <p>Created by Arnold Archaga · CMPA 4303 · Entry-Level Tech Career Guide</p>
   </footer>
 </body>
 </html>
